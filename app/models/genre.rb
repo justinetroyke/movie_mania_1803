@@ -1,3 +1,3 @@
-class Movie < ApplicationRecord
+class Genre < ApplicationRecord
 
 end
