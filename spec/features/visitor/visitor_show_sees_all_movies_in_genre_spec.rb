@@ -22,11 +22,3 @@ describe "User visits genres show page" do
     end
   end
 end
-
-# As a Visitor,
-#   When I visit a genre show page,
-#     I see all movies associated with that
-#     genre listed on the page.
-#
-# (for testing purposes, I should see at
-#   least 2 movies listed for a genre)
