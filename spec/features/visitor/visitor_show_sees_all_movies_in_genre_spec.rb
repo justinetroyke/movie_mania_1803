@@ -17,8 +17,8 @@ describe "User visits genres show page" do
 
       visit genre_path(genre2)
 
-      expect(page).to have_content(movie.name)
-      expect(page).to have_content(movie2.name)
+      expect(page).to have_content(movie.title)
+      expect(page).to have_content(movie2.title)
     end
   end
 end
