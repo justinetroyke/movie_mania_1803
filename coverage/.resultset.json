@@ -546,6 +546,32 @@
         null,
         null
       ],
+      "/Users/justinetroyke/turing/2mod/challenges/movie_mania_1803/spec/features/visitor/visitor_genre_show_page_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/justinetroyke/turing/2mod/challenges/movie_mania_1803/spec/features/visitor/visitor_index_sees_all_genres_spec.rb": [
         1,
         null,
@@ -607,13 +633,6 @@
         null,
         1,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null
@@ -768,6 +787,7 @@
         1,
         1,
         1,
+        null,
         null
       ],
       "/Users/justinetroyke/turing/2mod/challenges/movie_mania_1803/spec/models/movie_genre_spec.rb": [
@@ -1085,6 +1105,6 @@
         null
       ]
     },
-    "timestamp": 1528217541
+    "timestamp": 1528217963
   }
 }

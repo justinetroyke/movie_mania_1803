@@ -40,10 +40,3 @@ describe "user visits movie show page" do
     end
   end
 end
-#
-# As a Visitor,
-#   When I visit a movie show page,
-#     I see the number rating for this movie
-#
-# (the rating should be an integer attribute (from 1 to 5)
-# for the movie)

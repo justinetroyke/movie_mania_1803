@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-05T10:52:21-06:00">2018-06-05T10:52:21-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-05T10:59:23-06:00">2018-06-05T10:59:23-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -31,7 +31,7 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>56</b> files in total.
+    <b>57</b> files in total.
     <b>531</b> relevant lines. 
     <span class="green"><b>530</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed </span>
@@ -233,7 +233,7 @@
       <tr>
         <td class="strong"><a href="#1e219c389fde88984f6a1c6c1c8cf8f3bcf44505" class="src_link" title="app/models/genre.rb">app/models/genre.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>4</td>
+        <td>5</td>
         <td>3</td>
         <td>3</td>
         <td>0</td>
@@ -501,6 +501,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#80ac19546ecf2e5a31090ff7b30b6a4ccec52e21" class="src_link" title="spec/features/visitor/visitor_genre_show_page_spec.rb">spec/features/visitor/visitor_genre_show_page_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>24</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#8fdac418df0a0ca34bd851a851d92a2cc257dafb" class="src_link" title="spec/features/visitor/visitor_index_sees_all_genres_spec.rb">spec/features/visitor/visitor_index_sees_all_genres_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>19</td>
@@ -513,7 +523,7 @@
       <tr>
         <td class="strong"><a href="#9552207eb99973fd84079af89d9d76cdd66b1686" class="src_link" title="spec/features/visitor/visitor_movie_show_has_genres_spec.rb">spec/features/visitor/visitor_movie_show_has_genres_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>49</td>
+        <td>42</td>
         <td>32</td>
         <td>32</td>
         <td>0</td>
@@ -2453,6 +2463,12 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -6077,6 +6093,169 @@
 </div>
 
       
+        <div class="source_table" id="80ac19546ecf2e5a31090ff7b30b6a4ccec52e21">
+  <div class="header">
+    <h3>spec/features/visitor/visitor_genre_show_page_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>0</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">#</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"># describe &quot;user visits movie show page&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">#   it &quot;visitor sees movie genres&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">#     name = &#39;Sci-Fi&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">#     name2 = &#39;Comedy&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">#     movie = &#39;Daddy Day Care&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">#     rating = 5</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">#     rating2 = 3</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">#     descrb = &#39;Dads can not handle kid crap&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">#     descrb2 = &#39;Best Don Knotts film&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">#     director = Director.create(name: &#39;So and So&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">#     movie2 = &#39;The Ghost and Mr. Chicken&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">#     Genre.create(name: name2)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">#     genre2 = Genre.create(name: name2)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">#     movie = genre2.movies.create(title: movie, description: descrb, director_id: director.id, rating: rating)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">#     movie2 = genre2.movies.create(title: movie2, description: descrb2, director_id: director.id, rating: rating2)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">#</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">#     visit genre_path(genre)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">#</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">#     expect(page).to have_content(&#39;Average Rating:&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">#     expect(page).to have_content(4)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">#   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"># end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="8fdac418df0a0ca34bd851a851d92a2cc257dafb">
   <div class="header">
     <h3>spec/features/visitor/visitor_index_sees_all_genres_spec.rb</h3>
@@ -6474,48 +6653,6 @@
           
           
           <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby"># As a Visitor,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="45">
-          
-          
-          <code class="ruby">#   When I visit a movie show page,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="46">
-          
-          
-          <code class="ruby">#     I see the number rating for this movie</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="47">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby"># (the rating should be an integer attribute (from 1 to 5)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby"># for the movie)</code>
         </li>
       
     </ol>
