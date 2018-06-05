@@ -1,8 +1,10 @@
 <h1>Film Genres</h1>
 
-<% @genres.each do |genre| %>
-  <h3><%= genre.name%></h3>
-<% end %>
+<body>
+  <% @genres.each do |genre| %>
+    <h3><%= genre.name%></h3>
+  <% end %>
+</body>
 
 <%= form_for @genre do |f| %>
   <%=f.label :name %>

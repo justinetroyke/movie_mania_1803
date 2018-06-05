@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
+  post '/genres', to: 'admin/genres#create'
 
   resources :users, only: [:new, :show, :index, :create]
   resources :movies, only: [:index]
@@ -17,7 +18,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :categories, only: [:index]
-    resources :genres, only: [:index]
+    resources :genres
   end
 
   resources :carts, only: [:create]

@@ -32,9 +32,25 @@ describe "User visits genres index page" do
       expect(page).to have_field('genre[name]')
       expect(page).to have_button('Create Genre')
     end
+
+    it "allows admin to fill in a form for a new genres" do
+      name = 'Sci-Fi'
+      name2 = 'Comedy'
+      name3 = 'Mystery'
+      admin = User.create(username: "Dee", password: "password", role: 1)
+      genre = Genre.create(name: name)
+      genre2 = Genre.create(name: name2)
+
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
+
+      visit admin_genres_path
+      fill_in 'genre[name]', with: name3
+      click_on('Create Genre')
+
+      expect(current_path).to eq(admin_genres_path)
+      within('body') do
+        expect(page).to have_content(name3)
+      end
+    end
   end
 end
-
-# As an admin user,
-#   When I visit the genre index page,
-#   I see a form to create a new genre.
