@@ -21,17 +21,15 @@ describe "User visits genres index page" do
     it "allows admin to fill in a form for a new genres" do
       name = 'Sci-Fi'
       name2 = 'Comedy'
-      name3 = 'Mystery'
       admin = User.create(username: "Dee", password: "password", role: 1)
       genre = Genre.create(name: name)
-      genre2 = Genre.create(name:name)
+      genre2 = Genre.create(name: name2)
 
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
 
       visit admin_genres_path
-      save_and_open_page
 
-      expect(page).to have_field('name')
+      expect(page).to have_field('genre[name]')
       expect(page).to have_button('Create Genre')
     end
   end
