@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 20180605165115) do
     t.datetime "updated_at", null: false
     t.bigint "director_id"
     t.string "slug"
-    t.integer "rating"
+    t.integer "rating", default: 0
     t.index ["director_id"], name: "index_movies_on_director_id"
   end
 

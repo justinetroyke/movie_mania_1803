@@ -21,11 +21,3 @@ describe "user visits movie show page" do
     expect(page).to have_content('Average Rating: 4')
   end
 end
-
-# As a Visitor,
-#   When I visit a genre show page,
-#     I see the average rating for all
-#     movies in this genre
-#
-# (for testing purposes, I should add at
-#   least 2 movies for a genre)
