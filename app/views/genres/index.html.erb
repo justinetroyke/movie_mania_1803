@@ -5,3 +5,11 @@
     <h3><%= link_to genre.name, genre_path(genre) %></h3>
   <% end %>
 </body>
+
+<% if current_admin? %>
+  <%= form_for [:admin, @genre] do |f| %>
+    <%=f.label :name %>
+    <%=f.text_field :name %>
+    <%=f.submit %>
+  <%end%>
+<%end%>

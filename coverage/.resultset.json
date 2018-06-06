@@ -911,6 +911,7 @@
         1,
         1,
         1,
+        1,
         null,
         1,
         null,
@@ -919,14 +920,14 @@
         null,
         null,
         1,
-        39,
-        39,
+        40,
+        40,
         4,
         null,
         null,
         null,
         1,
-        6,
+        7,
         null,
         null
       ],
@@ -943,21 +944,26 @@
         1,
         null,
         1,
-        6,
+        2,
+        null,
+        null
+      ],
+      "/Users/justinetroyke/turing/2mod/challenges/movie_mania_1803/app/controllers/genres_controller.rb": [
+        1,
+        null,
+        1,
+        5,
+        5,
+        null,
+        null,
+        1,
+        2,
+        2,
         null,
         null
       ],
       "/Users/justinetroyke/turing/2mod/challenges/movie_mania_1803/app/controllers/admin/genres_controller.rb": [
         1,
-        1,
-        4,
-        4,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
         1,
         1,
         null,
@@ -1119,21 +1125,8 @@
         2,
         null,
         null
-      ],
-      "/Users/justinetroyke/turing/2mod/challenges/movie_mania_1803/app/controllers/genres_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        2,
-        2,
-        null,
-        null
       ]
     },
-    "timestamp": 1528298360
+    "timestamp": 1528299924
   }
 }
